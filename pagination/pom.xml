@@ -3,7 +3,7 @@
 
 	<groupId>org.bib</groupId>
 	<artifactId>pagination</artifactId>
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>pagination</name>
@@ -27,7 +27,7 @@
 		<url>https://github.com/blueinblue/pagination</url>
 		<connection>scm:git:git://github.com/blueinblue/pagination.git</connection>
 		<developerConnection>scm:git:git@github.com:blueinblue/pagination.git</developerConnection>
-	  	<tag>HEAD</tag>
+	  	<tag>pagination-1.0.5</tag>
 	</scm>
 	
 	<distributionManagement>
