@@ -5,7 +5,7 @@ Pagination is a small library built to simplify the creation of pagination links
 In your Spring @Config class, register an implementation of the PaginationCalculator.
 
 ```java
-	@Component("paginationCalc")
+	@Bean("paginationCalc")
 	public PaginationCalculator paginationCalc() {
 		// 10 = Maximum/preferred number of page links to show in a pagination component
 		PaginationCalculator pageCalc = new FixedWidthPaginationCalculator(10);
@@ -17,7 +17,7 @@ In your Spring @Config class, register an implementation of the PaginationCalcul
 To simplify the creation of PageRequest instances that you can pass to Spring Data's query methods, register a PageRequestFactory in your Spring config.
 
 ```java
-	@Component("pageRequestFactory")
+	@Bean("pageRequestFactory")
 	public PageRequestFactory pageRequestFactory() {
 		// 20 = Default number of elements to display in a page if not otherwise specified
 		PageRequestFactory prFactory = new PageRequestFactory(20);
