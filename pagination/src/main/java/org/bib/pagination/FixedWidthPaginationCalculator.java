@@ -36,6 +36,7 @@ public class FixedWidthPaginationCalculator implements PaginationCalculator, Ser
 	/* (non-Javadoc)
 	 * @see org.bib.pagination.PaginationCalculator#calculateWindow(org.springframework.data.domain.Page)
 	 */
+	@Override
 	public PaginationWindow calculateWindow(Page<?> page) {
 		int leftIndex = page.getNumber();
 		int rightIndex = page.getNumber();
